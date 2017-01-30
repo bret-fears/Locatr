@@ -28,7 +28,7 @@ public class FlickrFetchr {
             .appendQueryParameter("api_key", BuildConfig.FLICKR_API_KEY)
             .appendQueryParameter("format", "json")
             .appendQueryParameter("nojsoncallback", "1")
-            .appendQueryParameter("extras", "url_s")
+            .appendQueryParameter("extras", "url_s,geo")
             .build();
 
     private Gson mGson = new Gson();
